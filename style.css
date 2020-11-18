@@ -68,6 +68,28 @@ main{
     height: 1000px;
 }
 
+footer {
+    display: flex;
+    background: #000000;
+    opacity: 0.7;
+    margin-left: 5%;
+    margin-right: 5%;
+    bottom: 0;
+    width: 90%;
+    padding: 5px 15px;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: Quicksand;
+}
+
+footer section article {
+    width: 165px;
+}
+
+footer section figure {
+    display: flex;
+    justify-content: space-around;
+}
 @media (max-width: 776px) {
     header nav a:link{
         border: none;
