@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url(font/Quicksand_Book_Oblique.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Quicksand;
+
+}
+
+header img{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    font-size: 2.3em;
+    font-weight: 0.7em;
+    line-height: 0.6em;
+}
+
+nav{
+    color: #fff;
+    width: 60%;
+    font-size: 1.2em;
+    margin-top: 1.5%;
+    text-align: center;
+}
+
+header nav a:link,
+header nav a:visited{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 4%;
+    padding: 2px 7px;
+    border: 2px #000000 solid;
+}
+
+header nav a:hover{
+    border-bottom: 2px #FFF solid;
+    border-radius: 10px 10px;
+    transition: 1s;
+}
+
+main{
+    height: 1000px;
+}
