@@ -27,6 +27,7 @@ header {
 header img{
     padding-top: 10px;
     padding-left: 10px;
+    flex-shrink: 2;
 }
 
 h1{
@@ -35,7 +36,7 @@ h1{
     font-size: 2.3em;
     font-weight: 0.7em;
     line-height: 0.6em;
-    flex-shrink: 4;
+    white-space: nowrap;
 }
 
 nav{
@@ -53,7 +54,6 @@ header nav a:visited{
     margin-right: 4%;
     padding: 2px 7px;
     border: 2px #000000 solid;
-    flex-shrink: 1.2;
     white-space: nowrap;
 }
 
@@ -68,7 +68,7 @@ main{
     height: 1000px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 776px) {
     header nav a:link{
         border: none;
     }
