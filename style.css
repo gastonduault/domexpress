@@ -146,6 +146,12 @@ footer section figure {
     header nav a:link{
         border: none;
     }
+    header nav{
+        width: 90%;
+    }
+    header h1{
+        display: none;
+    }
 }
 @media (max-width: 1050px) {
     footer section:nth-child(4){
