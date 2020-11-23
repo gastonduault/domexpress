@@ -121,11 +121,12 @@ main figure img{
 /* FOOTER */
 footer {
     display: flex;
+    position: relative;
     background-color: rgba(0, 0, 0, 0.7);
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: 5% 15% 0 15%;
     bottom: 0;
-    width: 70%;
+    right: 0;
+    left: 0;
     padding: 5px 15px;
     justify-content: space-around;
     color: #ffffff;
@@ -140,31 +141,36 @@ footer section figure {
     display: flex;
     justify-content: space-around;
 }
-
 /* FOOTER */
 @media (max-width: 776px) {
-    header nav a:link{
+    header nav a:link {
         border: none;
     }
-    header nav{
+
+    header nav {
         width: 90%;
     }
-    header h1{
+
+    header h1 {
         display: none;
     }
 }
+
 @media (max-width: 1050px) {
-    footer section:nth-child(4){
+    footer section:nth-child(4) {
         display: none;
     }
-    main section figure img{
+
+    main section figure img {
         margin-bottom: 3%;
     }
 }
+
+
 @media (max-width: 1250px) {
-    footer{
+    footer {
         margin-left: 10%;
         margin-right: 10%;
-        width: 80%;
-        }
+    }
 }
+
