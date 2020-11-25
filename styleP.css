@@ -4,20 +4,19 @@
     font-weight: bold;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Comfortaa';
     src: url(font/Comfortaa-Light.ttf);
     font-weight: bold;
     font-style: normal;
 }
-html,
+
 body {
     padding: 0px;
     margin: 0px;
-    min-width: 800px;
-    width: 100%;
-    height: 100%;
 }
+
 /* HEADER */
 header {
     position: sticky;
@@ -29,17 +28,16 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-family: Comfortaa;
+
 }
 
-header img{
+header img {
     padding-top: 10px;
     padding-left: 30px;
     flex-shrink: 2;
-    width: 50px;
-    height: 50px;
 }
 
-h1{
+h1 {
     font-size: 30px;
     text-align: center;
     font-size: 2.3em;
@@ -47,11 +45,13 @@ h1{
     line-height: 0.6em;
     white-space: nowrap;
 }
+
 h2 {
     font-family: Comfortaa;
     /*border-bottom: 2px #ffffff solid;*/
 }
-nav{
+
+nav {
     color: #fff;
     width: 60%;
     font-size: 1.2em;
@@ -60,7 +60,7 @@ nav{
 }
 
 header nav a:link,
-header nav a:visited{
+header nav a:visited {
     color: #fff;
     text-decoration: none;
     margin-right: 4%;
@@ -69,12 +69,13 @@ header nav a:visited{
     white-space: nowrap;
 }
 
-header nav a:hover{
+header nav a:hover {
     border-bottom: 2px #39e0ff solid;
     border-radius: 10px 10px;
     transition: 1s;
     color: #39e0ff;
 }
+
 /* HEADER */
 
 /* MAIN*/
@@ -84,98 +85,70 @@ main {
     background-size: cover;
     background-attachment: fixed;
 }
-main > section {
-    margin: 7% 7%;
-    width: 83%;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    border: 1px solid #000;
-    border-radius: 15px 15px;
-    box-shadow: -5px -5px 5px #0000;
+
+.mainP{
+    height: 400px;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2% 2%;
     color: #fff;
     font-family: Quicksand;
-    padding: 10px 15px;
+    margin: 5% 5% 0% 5%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+footer section {
     display: inline-flex;
     flex-direction: row;
 }
 
-main article{
-    width: 50%;
+footer section article {
+    border-right: #fff 1px solid;
+    margin-right: 2%;
+    padding: 1%;
 }
-main article p::first-letter{
-    padding-left: 2em;
+
+footer section article:nth-child(4) {
+    border-right: none;
 }
-main figure{
-    width: 50%;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+footer figure {
+    display: flex;
     justify-content: space-between;
 }
-main figure img:nth-child(1),
-main figure img:nth-child(2){
-    margin-bottom: 3%;
-}
-main figure img{
-    border-radius: 5px 5px;
-    width: 200px;
-    height: 130px;
-}
-/*main figure img{
-    display: inline-block;
-    flex-direction: column;
-    flex-wrap: wrap;
-}*/
 
-/* FOOTER */
-body main footer {
-    display: flex;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 10% 15% 0 15%;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    padding: 5px 15px;
-    justify-content: space-around;
-    color: #ffffff;
-    font-family: Quicksand;
-}
-footer section figure img{
-    width: 50px;
-    height: 50px;
-}
-
-footer section article{
-    width: 165px;
-}
-footer section figure {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    width: auto;
-}
-
-/* FOOTER */
+/*MEDIA QUERY*/
 @media (max-width: 776px) {
-    header nav a:link{
+    header nav a:link {
         border: none;
     }
-}
-@media (max-width: 1050px) {
-    footer section:nth-child(4){
+
+    header nav {
+        width: 90%;
+    }
+
+    header h1 {
         display: none;
     }
-    main section figure img{
-        margin-bottom: 3%;
+}
+
+@media (max-width: 1050px) {
+    footer section article:nth-child(4) {
+        display: none;
+    }
+
+    footer section article:nth-child(3) {
+        border-right: none;
     }
 }
 
-
 @media (max-width: 1250px) {
-    footer{
-        margin-left: 10%;
-        margin-right: 10%;
-        }
+    footer {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 0%;
+    }
 }
