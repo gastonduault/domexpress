@@ -81,7 +81,7 @@ main{
     background-attachment: fixed;
 }
 
-main section {
+main .main {
     margin: 5% 7%;
     width: 83%;
     background-color: #000;
@@ -95,52 +95,58 @@ main section {
     flex-direction: row;
 }
 
-main article{
+.main article{
     width: 50%;
 }
-main article p::first-letter{
+.main article p::first-letter{
     padding-left: 2em;
 }
-main figure{
+.main figure{
     width: 50%;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-main figure img:nth-child(1),
-main figure img:nth-child(2){
+.main figure img:nth-child(1),
+.main figure img:nth-child(2){
     margin-bottom: 3%;
 }
-main figure img{
+.main figure img{
     border-radius: 5px 5px;
 }
-/*main figure img{
-    display: inline-block;
-    flex-direction: column;
-    flex-wrap: wrap;
-}*/
 
 /* FOOTER */
-footer {
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 5% 5% 0 5%;
-    padding: 5px 15px;
-    color: #ffffff;
+footer{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2% 2%;
+    color: #fff;
     font-family: Quicksand;
-}
-footer section {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 5% 5% 0% 5%;
+    border-radius: 5px 5px 0px 0px;
 }
 
+footer section{
+     display: inline-flex;
+     flex-direction: row;
+}
 
-footer section figure {
+footer section article{
+    border-right: #fff 1px solid;
+    margin-right: 2%;
+    padding: 1%;
+}
+
+footer section article:nth-child(4){
+    border-right: none;
+}
+
+footer figure {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-/* FOOTER */
+
+/*MEDIA QUERY*/
 @media (max-width: 776px) {
     header nav a:link {
         border: none;
@@ -160,17 +166,13 @@ footer section figure {
         display: none;
     }
 
-    main section figure img {
+    main .main figure img {
         margin-bottom: 3%;
     }
 }
 
 
 @media (max-width: 1250px) {
-    footer {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-bottom: 0%;
-    }
+
 }
 
