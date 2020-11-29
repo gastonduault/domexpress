@@ -1,6 +1,7 @@
+/* FONT  */
 @font-face {
     font-family: 'Quicksand';
-    src: url(font/Quicksand_Book_Oblique.otf);
+    src: url(font/Quicksand_Book.otf);
     font-weight: bold;
     font-style: normal;
 }
@@ -10,7 +11,7 @@
     font-weight: bold;
     font-style: normal;
 }
-
+/* FONT  */
 body {
     padding: 0px;
     margin: 0px;
@@ -26,13 +27,14 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-family: Comfortaa;
-
 }
 
 header img{
     padding-top: 10px;
     padding-left: 30px;
     flex-shrink: 2;
+    width: 50px;
+    height: 50px;
 }
 
 h1{
@@ -54,11 +56,13 @@ nav{
     margin-top: 1.5%;
     text-align: center;
 }
-
-header nav a:link,
-header nav a:visited{
+header a:link,
+header a:visited {
     color: #fff;
     text-decoration: none;
+}
+header nav a:link,
+header nav a:visited{
     margin-right: 4%;
     padding: 2px 7px;
     border: 2px #000000 solid;
@@ -73,18 +77,18 @@ header nav a:hover{
 }
 /* HEADER */
 
-/* MAIN*/
-main{
-    background-image: url("img/imageedit_1_2786271659.jpg");
+/* MAIN */
+main{ /* Pour l'image de fond */
+    background-image: url("img/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-
-main .main {
+/* MAIN INDEX.HTML*/
+.mainaceeuil section{
     margin: 5% 7%;
     width: 83%;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #000;
     border-radius: 15px 15px;
     box-shadow: -5px -5px 5px #0000;
@@ -95,27 +99,75 @@ main .main {
     flex-direction: row;
 }
 
-.main article{
+.mainaceeuil article {
     width: 50%;
 }
-.main article p::first-letter{
+.mainaceeuil article p::first-letter {
     padding-left: 2em;
 }
-.main figure{
+.mainaceeuil section figure {
     width: 50%;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.main figure img:nth-child(1),
-.main figure img:nth-child(2){
+.mainaceeuil section figure img:nth-child(1),
+.mainaceeuil section figure img:nth-child(2) {
     margin-bottom: 3%;
 }
-.main figure img{
+.mainaceeuil section figure img {
     border-radius: 5px 5px;
+    width: 200px;
+    height: 130px;
+}
+/* MAIN INDEX.HTML*/
+/* MAIN PRESTATION.HTML*/
+.mainprestation{
+    margin-top: 10px;
 }
 
+.mainprestation section{
+    margin: 0% 7% 5% 7%;
+    width: 83%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #000;
+    border-radius: 15px 15px;
+    color: #fff;
+    font-family: Quicksand;
+    padding: 10px 15px;
+}
+.mainprestation article {
+    display: flex;
+}
+.mainprestation section > h2 {
+    text-align: center;
+}
+
+.mainprestation article h2 {
+    display: flow-root;
+}
+.mainprestation section a:link,
+.mainprestation section a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.descriptionLong{
+    display: block;
+}
+.descriptionCourt{
+    display: none;
+}
+.mainprestation section figure img {
+    border-radius: 5px 5px;
+    width: 200px;
+    height: 130px;
+}
+.mainprestation figcaption {
+    text-align: center;
+}
+
+/* MAIN PRESTATION.HTML*/
 /* FOOTER */
 footer{
     background-color: rgba(0, 0, 0, 0.6);
@@ -124,30 +176,27 @@ footer{
     font-family: Quicksand;
     margin: 5% 5% 0% 5%;
     border-radius: 5px 5px 0px 0px;
+    display: inline-flex;
+    flex-direction: row;
 }
 
-footer section{
-     display: inline-flex;
-     flex-direction: row;
-}
-
-footer section article{
+footer div{
     border-right: #fff 1px solid;
     margin-right: 2%;
     padding: 1%;
 }
 
-footer section article:nth-child(4){
+footer div:nth-child(4) {
     border-right: none;
 }
 
-footer figure {
+footer div figure {
     display: flex;
     justify-content: space-between;
 }
 
 /*MEDIA QUERY*/
-@media (max-width: 776px) {
+@media (max-width: 800px) {
     header nav a:link {
         border: none;
     }
@@ -162,14 +211,19 @@ footer figure {
 }
 
 @media (max-width: 1050px) {
-    footer section article:nth-child(4) {
+    footer div:nth-child(4) {
         display: none;
     }
-    footer section article:nth-child(3) {
+    footer div:nth-child(3) {
         border-right: none;
     }
-
-    main .main figure img {
+    .descriptionLong{
+        display: none;
+    }
+    .descriptionCourt{
+        display: block;
+    }
+    .mainaceeuil section figure img {
         margin-bottom: 3%;
     }
 }
