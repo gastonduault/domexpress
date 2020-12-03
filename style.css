@@ -145,13 +145,17 @@ main{ /* Pour l'image de fond */
     text-align: center;
 }
 
-.mainprestation article h2 {
-    display: flow-root;
-}
 .mainprestation section a:link,
 .mainprestation section a:visited {
     color: #fff;
     text-decoration: none;
+}
+.mainprestation section a:hover{
+    border: 1px #39e0ff solid;
+    border-radius: 5px 5px;
+    transition: .4s;
+    color: #ffffff;
+    padding: 2px 2px;
 }
 .descriptionLong{
     display: block;
