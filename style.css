@@ -27,6 +27,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     font-family: Comfortaa;
+    min-height: 70px;
 }
 
 header img{
@@ -124,7 +125,7 @@ main{ /* Pour l'image de fond */
 /* MAIN INDEX.HTML*/
 /* MAIN PRESTATION.HTML*/
 .mainprestation{
-    margin-top: 10px;
+    padding-top: 2%;
 }
 
 .mainprestation section{
@@ -193,7 +194,9 @@ footer div:nth-child(4) {
 footer div figure {
     display: flex;
     justify-content: space-between;
+    width: 125px;
 }
+
 
 /*MEDIA QUERY*/
 @media (max-width: 800px) {
