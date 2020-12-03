@@ -77,8 +77,9 @@ header nav a:hover{
     color: #39e0ff;*/
     background-image: url(img/surveillance.png);
     background-repeat: repeat-y;
-    padding-left: 30px;
+    padding-left: 32px;
     transition: 0.7s;
+    border-bottom: 1px #39e0ff solid;
 }
 /* HEADER */
 
