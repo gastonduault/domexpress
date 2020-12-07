@@ -84,6 +84,16 @@ main{ /* Pour l'image de fond */
     background-size: cover;
     background-attachment: fixed;
 }
+main section{
+      width: 75%;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 1px solid #000;
+      border-radius: 15px 15px;
+      box-shadow: -5px -5px 5px #0000;
+      color: #fff;
+      font-family: Quicksand;
+      padding: 10px 15px;
+}
 /* MAIN INDEX.HTML*/
 .mainaccueil {
     padding-top: 10%;
@@ -91,14 +101,6 @@ main{ /* Pour l'image de fond */
 
 .mainaccueil section {
     margin: 0% 11% 5% 11%;
-    width: 75%;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid #000;
-    border-radius: 15px 15px;
-    box-shadow: -5px -5px 5px #0000;
-    color: #fff;
-    font-family: Quicksand;
-    padding: 10px 15px;
     display: inline-flex;
     flex-direction: row;
 }
@@ -134,13 +136,6 @@ main{ /* Pour l'image de fond */
 }
 .mainprestation section{
     margin: 0% 12% 5% 12%;
-    width: 75%;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid #000;
-    border-radius: 15px 15px;
-    color: #fff;
-    font-family: Quicksand;
-    padding: 10px 15px;
 }
 .mainprestation article {
     display: flex;
@@ -148,13 +143,12 @@ main{ /* Pour l'image de fond */
 .mainprestation section > h2 {
     text-align: center;
 }
-.mainprestation section a:link,
-.mainprestation section a:visited {
+.mainprestation .lienproduit:link,
+.mainprestation .lienproduit:visited {
     color: #fff;
-    text-decoration: none;
     white-space: nowrap;
 }
-.mainprestation section a:hover{
+.mainprestation .lienproduit:hover{
     border: 1px #39e0ff solid;
     border-radius: 5px 5px;
     transition: .4s;
@@ -172,11 +166,12 @@ main{ /* Pour l'image de fond */
     width: 200px;
     height: 130px;
 }
-.mainprestation figcaption{
+.mainprestation figcaption:link{
     text-align: center;
 }
-.mainprestation figcaption a:hover {
-    border: 1px #39e0ff solid;
+
+.mainprestation figcaption a:hover{
+    border: 2px #39e0ff solid;
     border-radius: 5px 5px;
     transition: .4s;
     color: #ffffff;
@@ -194,13 +189,6 @@ main{ /* Pour l'image de fond */
 }
 .mainProduit section {
     margin: 0% 12% 5% 12%;
-    width: 75%;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid #000;
-    border-radius: 15px 15px;
-    color: #fff;
-    font-family: Quicksand;
-    padding: 15px 15px;
 }
 .mainProduit p{
     padding-left: 20px;
@@ -290,9 +278,6 @@ footer div figure {
     .descriptionCourt{
         display: block;
     }
-    .mainaccueil section figure img {
-        margin-bottom: 3%;
-    }
 }
 @media (max-width: 1250px) {
     footer {
@@ -310,6 +295,11 @@ footer div figure {
         padding-left: 32px;
         transition: 0.5s;
         border-bottom: 1px #39e0ff solid;
+    }
+}
+@media (max-width:1179px){
+    .mainaccueil section figure img {
+        margin-bottom: 3%;
     }
 }
 /*MEDIA QUERIES*/
