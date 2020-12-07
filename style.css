@@ -166,14 +166,16 @@ main section{
     width: 200px;
     height: 130px;
 }
-.mainprestation a:link figcaption,
-.mainprestation a:visited figcaption {
-    text-align: center;
+.lienachteretprix{
     text-decoration: none;
+}
+.mainprestation a:link figcaption,
+.mainprestation a:visited figcaption{
+    text-align: center;
     color: #fff;
 }
 
-.mainprestation a:hover figcaption {
+.mainprestation a:hover figcaption{
     border: 2px #39e0ff solid;
     border-radius: 5px 5px;
     padding: 0px 3px;
