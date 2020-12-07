@@ -12,10 +12,13 @@
     font-style: normal;
 }
 /* FONT  */
+/* BODY  */
 body {
     padding: 0px;
     margin: 0px;
+    min-width: 800px;
 }
+/* BODY  */
 /* HEADER */
 header {
     position: sticky;
@@ -29,7 +32,6 @@ header {
     font-family: Comfortaa;
     min-height: 70px;
 }
-
 header img{
     padding-top: 10px;
     padding-left: 20px;
@@ -42,13 +44,11 @@ h1{
     font-size: 30px;
     text-align: center;
     font-size: 2.3em;
-    font-weight: 0.7em;
     line-height: 0.6em;
     white-space: nowrap;
 }
 h2 {
     font-family: Comfortaa;
-    /*border-bottom: 2px #ffffff solid;*/
 }
 nav{
     color: #fff;
@@ -70,10 +70,6 @@ header nav a:visited{
 }
 
 header nav a:hover{
-    /*border-bottom: 2px #39e0ff solid;
-    border-radius: 10px 10px;
-    transition: 1s;
-    color: #39e0ff;*/
     background-image: url(img/surveillance.png);
     background-repeat: repeat-y;
     padding-left: 32px;
@@ -81,7 +77,6 @@ header nav a:hover{
     border-bottom: 1px #39e0ff solid;
 }
 /* HEADER */
-
 /* MAIN */
 main{ /* Pour l'image de fond */
     background-image: url("img/background.jpg");
@@ -90,9 +85,13 @@ main{ /* Pour l'image de fond */
     background-attachment: fixed;
 }
 /* MAIN INDEX.HTML*/
+.mainaceeuil{
+    padding-top: 2%;
+}
+
 .mainaceeuil section{
-    margin: 5% 7%;
-    width: 83%;
+    margin: 0% 12% 5% 12%;
+    width: 75%;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #000;
     border-radius: 15px 15px;
@@ -103,7 +102,6 @@ main{ /* Pour l'image de fond */
     display: inline-flex;
     flex-direction: row;
 }
-
 .mainaceeuil article {
     width: 50%;
 }
@@ -131,10 +129,9 @@ main{ /* Pour l'image de fond */
 .mainprestation{
     padding-top: 2%;
 }
-
 .mainprestation section{
-    margin: 0% 7% 5% 7%;
-    width: 83%;
+    margin: 0% 12% 5% 12%;
+    width: 75%;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #000;
     border-radius: 15px 15px;
@@ -148,7 +145,6 @@ main{ /* Pour l'image de fond */
 .mainprestation section > h2 {
     text-align: center;
 }
-
 .mainprestation section a:link,
 .mainprestation section a:visited {
     color: #fff;
@@ -176,15 +172,17 @@ main{ /* Pour l'image de fond */
 .mainprestation figcaption {
     text-align: center;
 }
-
-/*Main du produit*/
+.mainprestation section a{
+    display: block;
+}
+/* MAIN PRESTATION.HTML*/
+/*MAIN PRODUIT.HTML*/
 .mainProduit{
     padding-top: 2%;
 }
-
 .mainProduit section {
-    margin: 0% 7% 5% 7%;
-    width: 83%;
+    margin: 0% 12% 5% 12%;
+    width: 75%;
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid #000;
     border-radius: 15px 15px;
@@ -199,26 +197,35 @@ main{ /* Pour l'image de fond */
 .mainProduit article img{
     float: right;
     padding-left: 50px;
+    padding-bottom: 10px;
 }
 .mainProduit h3{
     border-bottom: 1px solid #ffffff;
     margin-bottom: 5px;
 }
-.mainProduit .articleCategorie{
-    width: 100%;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
-    border: 1px solid #ffffff;
-    border-radius: 10px 10px;
-    padding: 5px;
-}
-.tarif{
-    margin-top: 20px;
-    text-align: center;
-}
 
+/*DEFINITION DU TABLEAU*/
+table{
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    caption-side: bottom;
+    padding: 10px;
+}
+th{
+    text-decoration:underline;
+    height: 20px;
+}
+td{
+    height: 20px;
+}
+table caption{
+    margin-top: 20px;
+}
+/*DEFINITION DU TABLEAU*/
+
+/*MAIN PRODUIT.HTML*/
 /* FOOTER */
 footer{
     background-color: rgba(0, 0, 0, 0.6);
@@ -230,13 +237,11 @@ footer{
     display: inline-flex;
     flex-direction: row;
 }
-
 footer div{
     border-right: #fff 1px solid;
     margin-right: 2%;
     padding: 1%;
 }
-
 footer div:nth-child(4) {
     border-right: none;
 }
@@ -246,9 +251,7 @@ footer div figure {
     justify-content: space-between;
     width: 125px;
 }
-
-
-/*MEDIA QUERY*/
+/*MEDIA QUERIES*/
 @media (max-width: 800px) {
     header nav a:link {
         border: none;
@@ -262,7 +265,6 @@ footer div figure {
         display: none;
     }
 }
-
 @media (max-width: 1050px) {
     footer div:nth-child(4) {
         display: none;
@@ -280,7 +282,6 @@ footer div figure {
         margin-bottom: 3%;
     }
 }
-
 @media (max-width: 1250px) {
     footer {
         margin-left: 2%;
@@ -299,4 +300,5 @@ footer div figure {
         border-bottom: 1px #39e0ff solid;
     }
 }
+/*MEDIA QUERIES*/
 
