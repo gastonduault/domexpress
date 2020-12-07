@@ -140,7 +140,7 @@ main section{
 .mainprestation article {
     display: flex;
 }
-.mainprestation section > h2 {
+.mainprestation section h2 {
     text-align: center;
 }
 .mainprestation .lienproduit:link,
@@ -166,15 +166,18 @@ main section{
     width: 200px;
     height: 130px;
 }
-.mainprestation figcaption:link{
+.mainprestation a:link figcaption,
+.mainprestation a:visited figcaption {
     text-align: center;
+    text-decoration: none;
+    color: #fff;
 }
 
-.mainprestation figcaption a:hover{
+.mainprestation a:hover figcaption {
     border: 2px #39e0ff solid;
     border-radius: 5px 5px;
-    transition: .4s;
-    color: #ffffff;
+    padding: 0px 3px;
+    transition: .1s;
 }
 
 .lienacheter{
