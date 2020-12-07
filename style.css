@@ -71,14 +71,13 @@ header nav a:visited{
 
 header nav a:hover{
     background-image: url(img/surveillance.png);
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     padding-left: 32px;
     transition: 0.5s;
     border-bottom: 1px #39e0ff solid;
 }
 /* HEADER */
 /* MAIN */
-
 main{ /* Pour l'image de fond */
     background-image: url("img/background.jpg");
     background-repeat: no-repeat;
@@ -86,11 +85,11 @@ main{ /* Pour l'image de fond */
     background-attachment: fixed;
 }
 /* MAIN INDEX.HTML*/
-.mainaceeuil{
+.mainaccueil {
     padding-top: 2%;
 }
 
-.mainaceeuil section{
+.mainaccueil section {
     margin: 0% 11% 5% 11%;
     width: 75%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -103,27 +102,27 @@ main{ /* Pour l'image de fond */
     display: inline-flex;
     flex-direction: row;
 }
-.mainaceeuil h2{
+.mainaccueil h2 {
     white-space: nowrap;
 }
-.mainaceeuil article {
+.mainaccueil article {
     width: 50%;
 }
-.mainaceeuil article p::first-letter {
+.mainaccueil article p::first-letter {
     padding-left: 2em;
 }
-.mainaceeuil section figure {
+.mainaccueil section figure {
     width: 50%;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.mainaceeuil section figure img:nth-child(1),
-.mainaceeuil section figure img:nth-child(2) {
+.mainaccueil section figure img:nth-child(1),
+.mainaccueil section figure img:nth-child(2) {
     margin-bottom: 3%;
 }
-.mainaceeuil section figure img {
+.mainaccueil section figure img {
     border-radius: 5px 5px;
     width: 200px;
     height: 130px;
@@ -173,12 +172,21 @@ main{ /* Pour l'image de fond */
     width: 200px;
     height: 130px;
 }
-.mainprestation figcaption {
+.mainprestation figcaption{
     text-align: center;
 }
-.mainprestation section a{
-    display: block;
+.mainprestation figcaption a:hover {
+    border: 1px #39e0ff solid;
+    border-radius: 5px 5px;
+    transition: .4s;
+    color: #ffffff;
 }
+
+.lienacheter{
+    background-color: #2BABC2;
+    border-radius: 25px 25px;
+}
+
 /* MAIN PRESTATION.HTML*/
 /*MAIN PRODUIT.HTML*/
 .mainProduit{
@@ -282,7 +290,7 @@ footer div figure {
     .descriptionCourt{
         display: block;
     }
-    .mainaceeuil section figure img {
+    .mainaccueil section figure img {
         margin-bottom: 3%;
     }
 }
